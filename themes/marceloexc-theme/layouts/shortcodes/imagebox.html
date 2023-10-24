@@ -1,0 +1,37 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class="box-container">
+{{ with .Get "link" }}<a href="{{ . }}" class="no-external-icon" >{{end}}
+<img src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} loading="lazy"/>
+{{ if .Get "link" }}</a>{{ end }}
+{{ if .Inner}}<div class="box-test">
+{{ .Inner | markdownify }}
+</div>
+{{ end }}
+</div>
+<!-- 
+
+	<div class="box-container">
+	<a href="https://google.com">
+		<img src="img.jpg" alt="snow">
+	</a>
+		<div class="box-test">
+			<h3>Animation Obsessive</h3>
+			<p>Ful animation archive. </p>
+		</div>
+	</div>
+	
+	
+	<div class="box-container">
+	<a href="https://google.com">
+		<img src="The_Breathing_Eye.gif" alt="snow">
+	</a>
+		<div class="box-test">
+			<h3>The Breathing Eye</h3>
+			<p>My Soul has Multiple Highways</p>
+			<details>
+				<summary>Links</summary>
+				<p>LOREM IPSUM DOLOR SIT AMET</p>
+				<a href="google.com">The Link to the Linktree</a>
+			</details>
+		</div>
+	</div>  -->

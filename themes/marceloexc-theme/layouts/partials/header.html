@@ -1,0 +1,30 @@
+<header>
+	<script>
+		
+		const theme = new Theme();
+		theme.install(document.body);
+		theme.start();
+		
+		let loadTheme = (name) => {
+			fetch(`/themes/${name}.svg`).then((response) => {
+				return response.text()
+			}).then((svg) => {
+				theme.load(svg)
+			}).catch(err => {
+				console.error(err)
+			})
+		}
+	</script>
+	
+	
+	<nav>
+		<div class="logoimg">
+			<a href="/">{{ partial "marceloexc-logo.html" }}</a>
+		</div>
+		<div class="navbar">
+			{{ range .Site.Menus.main }}
+		<a href="{{ .URL }} ">{{ .Name }}</a>
+		{{ end }}
+		</div>
+	</nav>
+</header>

@@ -1,0 +1,104 @@
+<html>
+{{ partial "head-homepage.html"}}
+<body>
+	<nav>
+	<div class="navbar">
+	{{ partial "marceloexc-logo.html"}}
+	</div>
+	</nav>
+	<div class="flex wrap noafter" style="gap: 1.6rem; margin-top: 30px; max-width: 1200px; margin-inline: auto;">
+		<a class="home-link" href="/about">
+			<div class="home-block">
+				<div class="home-image">
+					<div class="readable-text">
+						<h1>About</h1>
+					</div>
+					<div class="marquee">
+						<h1>About</h1>
+					</div>
+					<img class = "home-img" src="/media/Animation.gif" />
+				</div>
+			</div>
+		</a>
+		<a class="home-link" href="/gallery">
+			<div class="home-block">
+				<div class="home-image">
+					<div class="readable-text">
+						<h1>Gallery</h1>
+					</div>
+					<div class="marquee">
+						<h1 style="	animation-delay: 0.4s;">Gallery</h1>
+					</div>
+					<img class = "home-img" src="/media/test1.JPG" />
+				</div>
+			</div>
+		</a>
+		<a class="home-link" href="/projects">
+			<div class="home-block">
+				<div class="home-image">
+					<div class="readable-text">
+						<h1>Projects</h1>
+					</div>
+					<div class="marquee">
+						<h1 style="	animation-delay: 0.8s;">Projects</h1>
+					</div>
+					<img class = "home-img" src="/media/projects1.jpg" />
+				</div>
+			</div>
+		</a>
+		<a class="home-link" href="/music">
+			<div class="home-block">
+				<div class="home-image">
+					<div class="readable-text">
+						<h1>Music</h1>
+					</div>
+					<div class="marquee">
+						<h1 style="	animation-delay: 1.2s;">Music</h1>
+					</div>
+					<img class = "home-img" src="/media/laughing_stock.jpg" width="500" height="600" />
+				</div>
+			</div>
+		</a>
+		<a class="home-link" href="/links">
+			<div class="home-block">
+				<div class="home-image">
+					<div class="readable-text">
+						<h1>Links</h1>
+					</div>
+					<div class="marquee">
+						<h1 style="	animation-delay: 1.6s;">Links</h1>
+					</div>
+					<img class = "home-img" src="/media/links.jpg" />
+				</div>
+			</div>
+		</a>
+		<a class="home-link" href="/museum">
+			<div class="home-block">
+				<div class="home-image">
+					<div class="readable-text">
+						<h1>Museum</h1>
+					</div>
+					<div class="marquee">
+						<h1 style="	animation-delay: 2s;">Museum</h1>
+					</div>
+					<img class = "home-img" src="/media/museum.jpg" />
+				</div>
+			</div>
+		</a>
+	</div>
+	<div style="padding-left: 40px;">
+		<p>
+		  {{ range .Site.Taxonomies.tags.ByCount }}
+				 #<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
+		  {{ end }}
+		</p>
+		
+		
+	{{ partial "themepicker.html"}} 
+	</div>
+</body>
+{{ partial "header-dup.html"}}
+{{ partial "home.html"}}
+
+{{ partial "footer.html"}}
+</html>

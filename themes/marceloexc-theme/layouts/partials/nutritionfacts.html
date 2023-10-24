@@ -1,0 +1,102 @@
+	{{ $date := .Date.Format "2006 -01 - 02" }}
+{{ $lastmod := .Lastmod.Format "2006 - 01 - 02" }}
+
+<div class="nutrition-box">
+<h1 class="bold">
+	Nutrition Facts
+</h1>
+<div class="divider"></div>
+	
+	<p class="no-divider">
+		1 serving per container
+	</p>
+	
+	<p class="no-divider">
+		<b>
+			Serving Size
+			<span class="right">
+				the DAMN website
+			</span>
+		</b>
+	</p>
+	
+	<div  class="divider lg"></div>
+	
+	<p class="no-divider">
+			Amount per serving
+	</p>
+	
+	<div class="calories-info">
+	<h1 class="bold" style="font-size: 140%;">
+<div id=page-size>{{ i18n "pagesize" | default "Page Size"}}: <span id="size-value" class="right"> $PLACEHOLDER</span></div>
+	</h1>
+	</div>
+	
+	<div class="divider md"></div>
+	<p class="right no-divider">% Daily Value *</p>
+	<div class="divider"></div>
+	<p>
+		<b>
+			Website Version
+		</b>
+		<span class="right">v0.1</span>
+	</p>
+	
+	<p class="indent no-divider">
+		Hugo Version
+		<span class="right">{{ .Site.Hugo.Version }}</span>
+	</p>
+	<div class="divider"></div>
+	
+	<p>
+		<b>
+			Last Modified
+		</b>
+		<span class="right">{{ $lastmod }}</span>
+	</p>
+	
+	<p class="no-divider">
+		<b>
+			Created
+		</b>
+		<span class="right">
+			{{ $date }}
+		</span>
+	</p>
+	
+	<div class="divider md"></div>
+	
+	<p class="right no-divider">
+		<b>
+			Tags applied to page
+		</b>
+	</p>
+	
+	<div class="divider"></div>
+	
+	{{ range .Params.tags -}}
+		<li><a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ . }}</a></li>
+		<div class="divider"></div>
+		{{ else }}
+		<li><i>no tags available</i></li>
+	{{- end -}}
+	
+	
+	<p class="no-divider">
+		* Page size indicator does not use cached content
+	</p>
+	
+	
+	
+	<!-- <p><b>Last modified: </b></p><p>{{ $lastmod }}</p>
+	<p><b>Published on: </b></p><p>{{ $date }}</p>
+	<p><b>Current tags:</b></p>
+	<div style="text-align:right;">
+	{{ range $i, $e := .Params.tags -}}
+		{{- if $i -}}, {{ end -}}
+		<a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
+		{{ else }}
+		<p>no tags available</p>
+	{{- end -}}
+	</div> -->
+	</div>

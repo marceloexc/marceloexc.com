@@ -1,0 +1,22 @@
+<header>
+	<!-- this is all because i cant actually put my normal header.html
+	scripts inside of head.html and actually make it work for the homepage
+	and i also cant use the regular header.html because it has this big ass logo
+	sooooo....here so you -->
+<script>
+
+	const theme = new Theme();
+	theme.install(document.body);
+	theme.start();
+	
+	let loadTheme = (name) => {
+		fetch(`/themes/${name}.svg`).then((response) => {
+			return response.text()
+		}).then((svg) => {
+			theme.load(svg)
+		}).catch(err => {
+			console.error(err)
+		})
+	}
+</script>
+</header>

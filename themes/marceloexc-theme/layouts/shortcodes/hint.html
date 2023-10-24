@@ -1,0 +1,17 @@
+<blockquote>
+  {{ .Inner | .Page.RenderString }}
+</blockquote>
+
+
+<fieldset>
+<legend>Warning!</legend>
+<p>Some of these images can be very big!</p>
+</fieldset>
+
+
+<details {{ if or (.Get "open") (in .Params "open") }}open{{ end }}>
+  {{- $summary := cond .IsNamedParams (.Get "title") (.Get 0) -}}
+  <summary>{{ $summary | .Page.RenderString }}</summary>
+	{{ .Inner | .Page.RenderString }}
+</details>
+<!-- TODO: fix this shit! -->

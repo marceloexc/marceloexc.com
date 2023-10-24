@@ -1,0 +1,12 @@
+<section class="gallery-box">
+{{ $image := (.Page.Resources.ByType "image") }}
+{{ with $image }}
+	{{ range . }}
+	<figure>
+		<a class="gallery no-hover" href="https://dont-look-back.marceloexc.com/{{ strings.TrimSuffix (path.Ext .Name) .Name }}_full_res.jpg"><img src="{{ .RelPermalink }}" loading="lazy"  height={{ .Height }} width= {{ .Width }}/></a>
+	<figcaption>
+	{{ with .Exif }}{{ .Tags.ImageDescription }}{{ end }}</figcaption>
+	</figure>
+	{{ end }}
+{{ end }}
+</section>
