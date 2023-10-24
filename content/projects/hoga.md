@@ -1,6 +1,6 @@
 ---
 title: HOGA
-draft: true
+draft: false
 date: 2023-09-09
 ---
 {{< figure src="../hogalogo.svg" >}}
