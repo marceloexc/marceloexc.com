@@ -1,7 +1,9 @@
 ---  
-title: "My favorite websites and resources"  
+title: "My favorite websites and resources" 
 date: 2020-12-27T22:37:51+05:30  
-draft: true  
+draft: false  
+tags:
+- website
 ---  
 {{< details title="Personal Websites and Portfolios" open=false >}}
 * https://jakintosh.com/
@@ -11,12 +13,7 @@ draft: true
 * https://shelby.cool/#/sketches
 * https://geopjr.dev/
 * https://d00k.net/
-* https://badd10de.dev/
-* https://homebrewserver.club/
-* https://azlen.me/
 * https://opguides.info/
-* https://nownownow.com/about
-* https://sixey.es/
 * https://patrick-is.cool/
 * https://www.provokeanalog.com/
 * https://rezmason.net/
@@ -24,11 +21,8 @@ draft: true
 * https://copiona.com/me/
 * https://proycon.anaproy.nl/
 * https://roytang.net/
-* https://nor.the-rn.info/
 * https://matildepark.ca/
 * https://corvid.cafe/home.html
-* https://smolcss.dev/
-* https://moderncss.dev/
 * https://lowerquality.com/desertjournalism/
 * https://coolguy.website/home/
 * https://mrshll.com/
@@ -36,19 +30,15 @@ draft: true
 * https://njoqi.me/
 * https://sirtetris.com/
 * https://demozoo.org/sceners/131751/
-* https://badd10de.dev/
 * https://www.pixouls.xyz/
 * https://compudanzas.net/introduction_to_uxn_programming_book.html
 * https://yhnck.xyz/
 * https://flower.codes/links.html
 * https://www.wellobserve.com/
-* https://detondev.com/digital-garden.html
-	* just https://detondev.com/ in general as well
 * https://helveticablanc.com/
 * https://colindrake.me/visual/generative-art/
 * https://www.aphrodite.dev/
-* https://asciiart.en.utf8art.com/
-* https://think-like-a-git.net/ (for learning git)
+* (for learning git)
 * gemini://mozz.us
 * https://dark-firepit.cloud/
 * https://emreed.net/LowTech_Directory
@@ -66,28 +56,17 @@ draft: true
 * https://fontsinuse.com/uses/28760/neon-genesis-evangelion
 * https://www.youtube.com/watch?v=u6fjjaq8JCI
 * https://wiki.nikiv.dev/
-* https://adelfaure.net/
 * https://egypt.urnash.com/
 	* the weird furry one i found.
-* https://heckscaper.com/resources/stems.html
-	* A LOT of cool music stuff found on here
-* https://heckscaper.com/main.html
-* https://jameschip.io/home.html
-* https://heckscaper.com/plugins/gw/index.html great plugins on here
 * https://userstyles.world/ - steal the boxes from here? 
-* https://vigrey.com/ - hmmm
 * https://www.anothermag.com/ - i just liek it
 * https://www.paritybit.ca/
-* https://heavy.rocks/
 * https://cassidyjames.com/ # portfolio
 * https://unascribed.com/ - very cool and thoughtfully designed
 * https://nfld.uk/
 * https://adactio.com/?skin=hirnlego (includes some cool themes)
 * https://cblgh.org/
-* https://www.altaplana.be (some cool art - maybe this goes on "best artists"?)
 * https://ensix.xyz/ - nice website design
-* https://novov.me/ - designer, programmer, all sorts of cool stuff
-* https://nezu.world - 
 {{< /details >}}
 * https://brainpoison.online/hell
 * https://designrants.substack.com/p/05-fuck-the-system-teach-yourself - learn how to make fonts your damn self!
@@ -106,4 +85,33 @@ draft: true
 * https://www.gooood.cn/
 	* some cool archeticture stuff here
 	* https://www.archdaily.com/1000535/cava-arcari-david-chipperfield-architects
-	
+## About the "minimal" web
+I certainly don't think that my website qualifies as anything for "minimal" or "permanent". I occasionally forget to compress 4mb images and I use a lot of CSS3 that some older browsers may not support. Nevertheless I think that reading up on some of these could give a good understanding of the importace for staying simple with HTML/CSS
+* [Homebrew Club](https://homebrewserver.club) - Appreciating the liberty of self hosting from home instead of relying on a data center. A lot of my stuff is self-hosted, like my 24/7 Jellyfin instance...but this website isn't at the moment (it uses vultr). That could change!!!!!
+## Portfolio Websites
+These are mainly "personal" websites, stuff that has an about page, some projects, or just have a cool design. I list sites here that are either very cool in design, have a lot of content, or mainly because I think the person hosting it is cool
+* [Six Eyes](https://sixey.es/)- About page says that the website is a *place* and its very accurate. Easy to get lost and the dedication taken on the website is amazing.
+* [Northern Info](https://nor.the-rn.info/) - Home page gives me [Milwaukee Protocol vibes](https://vcjd.bandcamp.com/album/milwaukee-protocol). "*Northern Information is the abstraction of artist Tyler Etters.*"
+* [Provoke Analogue](https://www.provokeanalog.com/) - main website of [rupert@merveilles.town](https://merveilles.town/@rupert). Not really a portfolio but theres a lot of cool pictures here.
+* [Bad Diode](https://badd10de.dev/) - A lot of good information about programming and music comp
+* [Devine Lu Linvega (XXIIVV)](https://wiki.xxiivv.com/site/home.html) - Probably the most interesting portfolio site on here, a lot of content. Devine says they wanted the site to feel like a playground and I think it succeeded.
+* [Detondev](https://detondev.com/) - No idea what this is. Looks cool though
+* [Nezu World](https://nezu.world/) - People who can be musicians, artists, and programmers at the same time are wizards in my eyes
+* [Novov](https://novov.me/) - Has a lot of interesting content
+* [Unascribed](https://unascribed.com/) - Really playful design and works on a lot of Java-related projects
+* [Adel Faure](https://adelfaure.net/) - The ASCII art is a treat...!
+## Resource websites
+Mainly websites that usually have **one** goal in mind and it is to teach you **something**. Most of these are programming related.
+### Programming
+* CSS
+	* https://smolcss.dev/
+	* https://moderncss.dev/
+* [Think Like A Git](https://think-like-a-git.net/) - Helps teach the git CLI and its inner-workings
+### Design
+* [Fuck the system, teach yourself (how to make fonts) (for free!)](https://designrants.substack.com/p/05-fuck-the-system-teach-yourself)
+* [Smashing Magazine](https://www.smashingmagazine.com/) - Publishes great content about design, web development, and the overlap between the two. Also the website just looks very nice in general
+### Art
+* [Alta Plana](https://www.altaplana.be/en/start) - I have no idea what this is.
+### Music
+* [Heckscaper](https://heckscaper.com/main.html) - MANY music resources can be found here (stems, plugins, etc), mostly (or all?) for free
+## Just plain cool sites
