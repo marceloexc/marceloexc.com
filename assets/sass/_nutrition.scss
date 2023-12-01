@@ -63,6 +63,9 @@
   letter-spacing: 0.15px;
     font-family: 'Open Sans', sans-serif;
   font-size: 220%;
+  .title {
+  text-align: center;
+  }
 }
 
 .calories-info {
@@ -71,7 +74,7 @@
 }
 
 .bold {
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .no-margin {
