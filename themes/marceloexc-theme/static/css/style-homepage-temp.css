@@ -15,10 +15,7 @@
 
 /* Typography */
 
-
-
-
-font-face  {
+@font-face  {
 	font-family: "FT88 Gothique";
 	src: url("../fonts/FT88-Gothique.woff2");
 }
@@ -43,7 +40,6 @@ font-face  {
 	src: url("../fonts/Millimetre-Light_web.woff2");
 }
 
-
 @font-face {
 	font-family: 'AUTHENTIC Sans';
 	src: url("/fonts/AUTHENTICSans-90.woff2") format("woff2"),
@@ -52,7 +48,6 @@ font-face  {
 	font-style: normal;
 	font-display: swap;
 }
-
 
 @font-face {
 	font-family: "FT88 Serif";
@@ -67,7 +62,7 @@ font-face  {
 
 
  /* FONT STYLE DECLARATIONS!! and COLOR  */
-main h1 {
+h1 {
 	Font: 72px "Menlo";
 	line-height:0.9;
 	margin-block: 0.5em;
@@ -85,19 +80,17 @@ h3, th{
 	font: 19px "Lack-Regular";
 }
 
-p, ul, li, details, td{
+p, a, ul, li, details, td{
 	font:17px "AUTHENTIC Sans";
 	line-height: 1.6;
 }
 
 figcaption {
-	font: 12px "AUTHENTIC Sans";
-	padding-block: 2px;
+	font: 16px "AUTHENTIC Sans 60";
 	/* TODO: really necessary? */
-	color: var(--f_high);
 }
 main a,
-aside a, 
+aside a,
 figcaption {
 	color:var(--f_low);
 	/* TODO: just a[not] nav would be better */
@@ -118,149 +111,74 @@ td, th {
 }
 
 
-main a:not([href^=http]):not(.no-external-icon):not(.gallery)::after,
-aside a:not([href^="{{ (urls.Parse .Page.Permalink).Scheme }}://{{ (urls.Parse .Page.Permalink).Host }}"]):not(.no-external-icon)::after
-{
-  content: '→';
-}
-
-a[href^=http]:not(.gallery):not(.no-external-icon)::after { 
-	content:'↗';
- }
-
-main ul a,
-main li a,
-main a,
+body a,
 aside li a,
 aside a {
 	font-family: "Lack-Regular";
 	color: var(--f_med);
-	
 }
 
 
-.display-flex {
+details {
+	margin-bottom: 1em;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid var(--f_high);
+	font-weight:bold;
+	/* max-width: 50ch; TODO: Uncomment this */
+}
+
+
+
+a:hover {
+	background-color:var(--b_inv);
+	color:var(--f_high);
+}
+
+::selection {
+	background-color: var(--b_high);
+	color:var(--b_inv);
+}
+
+
+pre, code {
+	font:  "Victor Mono SemiBold"; 
+	/* TODO: why not just use regular system monospae font? */
+	color: rgb(255,255,255);
+	background-color: rgb(57, 51, 39);
+	padding:3px;
+}
+
+blockquote p {
+	font-size: 26px !important;
+	font-family: "Millimetre Light";
+	padding-left: 16px;
+	border-left: 2px dotted;
+}
+
+
+.navbar a:hover {
+	cursor: cell;
+}
+
+html {
+	scrollbar-color: var(--f_med) var(--b_med);
+	scrollbar-width: 30px;
+}
+
+/* the beginning */
+
+.floatright {
+	float: right;
+	max-width: 45%;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.flex {
 	display: flex;
 }
-
-.border-box {
-	border: 1px solid var(--f_high);
-}
-
-.aside-box {
-	margin: 20px auto 20px auto ;
-	padding: 0 7px;
-	box-sizing: border-box;
-	width: 300px;
-
-	
-}
-
-.nutrition-box {
-	width: 252px;
-	margin: 20px auto 20px auto ;
-	border: 1px solid var(--f_high);
-	padding: 0 7px;
-	background-image: url('/media/paper-texture.webp');
-	background-size: cover;
-	font-size: 16px;
-	position: relative;
-}
-
-.nutrition-box::after {
-	content: "";
-	  position: absolute;
-	  top: 100%;
-	  height: 20px;
-	  width: 100%;
-	  left: 0;
-	  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
-	  background-size: 200%;
-}
-
-.nutrition-box * {
-	box-sizing: border-box;
-}
-
-.divider {
-  border-bottom: 1px solid var(--f_high);
-  margin: 2px 0;
-  clear: right;
-}
-
-
-.float {
-	max-width: 25%;
-	padding-right: 1em;
-}
-
-.align-right {
-	text-align: right;
-}
-
-.left {
-	float: left;
-}
-
-.right {
-  float: right;
-}
-
-.lg {
-	height: 10px;
-}
-
-.md {
-	height: 5px;
-}
-
-.lg, .md {
-  background-color: var(--f_high);
-  border: 0;
-}
-
-.nutrition-box p {
-	font-size: 90%;
-	margin: 0;
-	font-family: 'Open Sans', sans-serif;
-}
-
-
-
-.nutrition-box h1 {
-	margin: 1px 0;
-	letter-spacing: 0.15px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 220%;
-}
-
-.calories-info {
-	margin: -4px -2px;
-	overflow: hidden;
-}
-
-.bold {
-	font-weight: 900;
-}
-
-.no-margin {
-	margin: -5px -2px;
-}
-
-.nutrition-box p:not(.no-divider){
-	border-bottom: 1px solid var(--f_high);
-}
-
-.nutrition-box .indent {
-	margin-left: 1em;
-}
-
-.gallery-box {
-	  display: flex;
-	  flex-wrap: wrap;
-	  gap:5px;
-}
-
 
 .home-link {
 	align: center;
@@ -348,107 +266,35 @@ aside a {
 	content: '→';
 }
 
+a{
+	font-family: "Lack-Regular";
+}
+
+
+a[href^="http"]:not([href^="{{ (urls.Parse .Page.Permalink).Scheme }}://{{ (urls.Parse .Page.Permalink).Host }}"]):not(.no-external-icon)::after
+{
+  content: '→';
+}
+
+
+
+
 @keyframes marquee {
 	0%   { transform: translate(0, 0); }
 	100% { transform: translate(-100%, 0); }
 }
 
-
-figure {
-	margin: 2px;
-}
-
-.gallery img {
-	cursor: zoom-in;
-	width: auto;
-}
-
-img {
-	width: 100%;
-	vertical-align: middle;
-	border: 1px solid black;
-	max-width: 600px;
-}
-
-
-details {
-	margin-bottom: 1em;
-	padding: 5px 5px 5px 5px;
-	font-weight:bold;
-	border: 1px solid var(--f_high);
-	/* max-width: 50ch; TODO: Uncomment this */
-}
-
-details:hover {
-	cursor: pointer;
-}
-
-summary {
-	font-weight: bold;
-	padding: 5px 5px 5px 10px;
-}
-
-details[open] {
-	padding-left: 10px;
-}
-
-details[open] summary {
-	border-bottom: 1px solid var(--f_high);
-	margin-bottom: 0.5em;
-}
-
-a:hover:not(.no-hover) {
-	background-color:var(--b_inv);
-	color:var(--b_med);
-}
-
-::selection {
-	background-color: var(--b_high);
-	color:var(--b_inv);
-}
-
-
-pre, code {
-	font:  "Victor Mono SemiBold"; 
-	/* TODO: why not just use regular system monospae font? */
-	color: rgb(255,255,255);
-	background-color: rgb(57, 51, 39);
-	padding:3px;
-}
-
-blockquote p {
-	font-size: 26px !important;
-	font-family: "Millimetre Light";
-	padding-left: 16px;
-	border-left: 2px dotted;
-}
-
-
-.navbar a:hover {
-	cursor: cell;
-}
-
-html {
-	scrollbar-color: var(--f_high) var(--b_med);
-	scrollbar-width: 30px;
-	height: 100%;
-
-}
-
 body {
 	background:var(--background);
 
+	margin: 0;
 }
 
 main {
 	background:var(--b_low);
-
-
-	
 }
 footer {
 	background-color:var(--b_med);
-	
 }
 
 footer h1 {
@@ -477,32 +323,8 @@ option {
 	background-color: $option;
   }
 
-/*  */
-/* extra: color for tables */
-/*  */
-table {
-	table-layout: fixed;
-	width: 100%;
-	border-collapse: collapse;
-	border: 3px solid var(--b_inv);
-}
 
-thead th,
-tfoot th,
-td {
-	border: 1px dotted var(--b_inv);
-}
-
-/* zebra stripping */
-
-tbody tr:nth-child(odd) {
-	background-color: var(--background)
-}
-
-tbody tr:nth-child(even) {
-	background-color: var(--b_low)
-}
-
+/* image boxes   */
 
 
 /* ============================== */
@@ -513,21 +335,20 @@ tbody tr:nth-child(even) {
 @media (min-width:950px) {
 	nav {
 		display: grid;
-		grid-template-columns: minmax(329px, 329px) 1fr;
+		
 	}
 	.navbar {
 		display: grid;
+		
 	}
 	.logo {
 	padding: 1.3em;
-	
 	}
 }
 
 @media (min-width:768px) {
 	nav {
 		display: grid;
-		border-left: solid 1px var(--f_high);
 	}
 	.navbar {
 		display: flex;
@@ -535,8 +356,9 @@ tbody tr:nth-child(even) {
 	.navbar > * {
 		padding-block: 10px;
 	}
-	
 	.logo {
+		border-left:solid 1px var(--f_high);
+		padding-block: 1.3em;
 	}
 }
 
@@ -548,37 +370,39 @@ tbody tr:nth-child(even) {
 	.navbar {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
+		border-left: solid 1px var(--f_high);
+		padding-block: 1em;
+		
 		/* removes attachment from left side of navbar and puts it in center */
 		/* allows for grid when viewed on small screen */
 	}
 	.navbar > * {
-		border: solid 1px var(--f_high);
-		border-right: 0;
-		padding-block: 6px;
-	}
-	
-	.navbar a {
-		font-size: 17px;
+		padding-block: 10px;
 	}
 	h1 {
 		font-size: 48px;
 		/* small devices cant view 72px h1's! */
 	}
-	
-	.logo {
-		width: 55%;
-	}
+
+
 }
 
+@media (max-width: 600px) {
+	.home-link {
+		max-width: 100%;
+		min-width: 100px;
+		margin-inline: 10px;
+	}
+	.readable-text h1 {
+		font-size:  180px;
+	}
+}
 
 main {
 	word-wrap: break-word;
 	word-break: break-word;
 	
-}
-
-main ul, li {
-	list-style: square;
 }
 
 td img,
@@ -596,25 +420,13 @@ th img {
 	/*  TODO: this does not belong here */
 
 	.logo {
-	box-sizing: border-box;
+	 display: block;
+	 align-items: center;
+	 width: auto;
+	 height: 18px;
+	 padding-inline: 1em;
+	 overflow: hidden;
 	}
-	
-	.navbar > * {
-		display:grid;
-		place-items: center;
-		padding-inline: 16px;
-		border-right: solid 1px var(--f_high);
-	}
-	
-	.navbar a:link,
-		a:visited {
-		text-decoration: none;
-	}
-	
-
-.logo {
-	padding: 1em;
-}
 
 
 .logo:hover {
@@ -625,20 +437,18 @@ th img {
 aside {
 	border-inline: solid 1px var(--f_high);
 	border-bottom: solid 1px var(--f_high);
+	padding:1em;
 
 }
 
-
+main h1,
+aside h1, h2 {
+	border-bottom: solid 1px var(--f_high);
+}
 
 aside li > * {
 	font-size:14px;
 }
-
-aside li {
-	margin: 0;
-	list-style: inside;
-}
-
 
 main {
 	border-bottom: solid 1px var(--f_high);
@@ -648,71 +458,8 @@ main {
 	padding-bottom:5em;
 }
 
-
 pre {
   word-wrap: normal;
   overflow-x: auto;
   white-space: pre;
 }
-
-
-/* ##################################### */
-/* Actual responsive ui code begins here */
-/* ##################################### */
-body {
-	display: grid;
-	grid-template-areas: 
-		'header'
-		'main-content'
-		'aside'
-		'footer';
-	margin: 0 auto;
-}
-
-body > header {
-	grid-area:header;
-}
-body > main {
-	grid-area:main-content;
-	min-height: 80vh; 
-	/* this stretches the page all the way to the bottom */
-}
-body > aside {
-	grid-area:aside;
-}
-
-body > footer {
-	grid-area:footer;
-}
-
-
-
-/* @media (min-width:768px) {
-	body {
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:
-			'header header'
-			'main-content main-content'
-			'aside aside'
-			'footer footer';
-	}
-	.logo {
-		width: 55%;
-	}
-}
-
-@media (min-width:950px) {
-	body {
-		grid-template-columns: minmax(330px, 300px) 1fr;
-		grid-template-areas:
-			'header header header header header header'
-			'aside main-content main-content main-content main-content main-content'
-			'footer footer footer footer footer footer';
-	}
-	.logo {
-		width: 100%;
-	}
-}
- */
-
-

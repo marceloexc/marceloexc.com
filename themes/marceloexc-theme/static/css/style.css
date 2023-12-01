@@ -16,8 +16,6 @@
 /* Typography */
 
 
-
-
 @font-face  {
 	font-family: "FT88 Gothique";
 	src: url("/fonts/FT88-Gothique.woff2");
@@ -64,9 +62,7 @@
 	src: url("/fonts/FT88-Bold.woff2");
 }
 
-
-
- /* FONT STYLE DECLARATIONS!! and COLOR  */
+/* Typography */ 
 main h1 {
 	Font: 72px "Menlo";
 	line-height:0.9;
@@ -93,14 +89,11 @@ p, ul, li, details, td{
 figcaption {
 	font: 12px "AUTHENTIC Sans";
 	padding-block: 2px;
-	/* TODO: really necessary? */
 	color: var(--f_high);
 }
 main a,
 aside a {
 	color:var(--f_low);
-	/* TODO: just a[not] nav would be better */
-	/* 6 days later...wait...what did i mean by this? */
 }
 
 fieldset {
@@ -151,8 +144,6 @@ aside a {
 	padding: 0 7px;
 	box-sizing: border-box;
 	width: 300px;
-
-	
 }
 
 .nutrition-box {
@@ -480,7 +471,6 @@ tbody tr:nth-child(even) {
 main {
 	word-wrap: break-word;
 	word-break: break-word;
-	
 }
 
 main ul, li {

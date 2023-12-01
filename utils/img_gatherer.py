@@ -12,7 +12,7 @@ def compress_and_move_images(input_dir, output_dir):
         os.makedirs(full_res_dir)
 
     for filename in os.listdir(input_dir):
-        if filename.endswith(('.jpg', '.jpeg', '.png')):
+        if filename.endswith(('.jpg', '.jpeg', '.png', 'JPG')):
             image_path = os.path.join(input_dir, filename)
             image = Image.open(image_path)
             imageexif = image.getexif()

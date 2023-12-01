@@ -1,7 +1,7 @@
 ---  
 title: "Darktable Workflow"  
 date: 2023-7-19T22:37:51+05:30  
-draft: false  
+draft: true  
 ---  
 
 * Tone Equalizer - set different tones for the different part of the image
@@ -12,6 +12,8 @@ https://discuss.pixls.us/c/processing/playraw/30
 https://discuss.pixls.us/t/i-just-love-darktable-3-6/26265
 https://old.reddit.com/r/DarkTable/comments/sxh1cs/i_made_a_light_theme_in_darktable/
 https://discuss.pixls.us/t/my-darktable-styles-pack/31634?u=fujifan5000
+https://discuss.pixls.us/t/replicating-black-mist-filters-in-darktable/32355/13
+https://github.com/t3mujin/t3mujinpack
 ## The Three Ways To Do Color Calibration
 * Color calibration
 	* Most commonly known for setting **white balance** - can also be used to change color of image

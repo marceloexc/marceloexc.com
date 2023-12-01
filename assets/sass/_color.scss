@@ -1,0 +1,52 @@
+
+
+body {
+	background:var(--background);
+	
+}
+
+main {
+	background:var(--b_low);
+}
+footer {
+	background-color:var(--b_med);
+}
+
+footer h1 {
+	color: var(--f_med);
+}
+
+select {
+	appearance:none;
+	border: solid 1px var(--f_high);
+	outline: 0;
+	font: "FT88 Serif";
+	width: 20em;
+	height: 3em;
+	padding: 0 4em 0 1em;
+	background: url("/media/caret-square-rounded-down.svg")
+	  no-repeat right 0.8em center / 1.4em;
+	cursor: context-menu;
+	color: var(--f_high);
+}
+
+a:hover:not(.no-hover) {
+	background-color:var(--b_inv);
+	color:var(--b_med);
+	cursor: alias;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--f_high);
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+::selection {
+	background-color: var(--b_high);
+	color:var(--b_inv);
+}
+

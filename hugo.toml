@@ -36,7 +36,6 @@ lastmod = ["lastmod", ":git", "date", "publishDate"]
 	weight = 50
   [[menu.main]]
   name = 'Museum'
-  
   weight = 60
   
 

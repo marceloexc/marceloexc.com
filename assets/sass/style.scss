@@ -1,0 +1,51 @@
+$background: #D7C6B8;
+
+$f_high: #1E1D1D;
+$f_med: #25296B;
+$f_low: #523d2c;
+$f_inv: #3f4f5b;
+
+$b_high: #E7D8C8;
+$b_med: #CEC7C0;
+$b_low: #E9E2D8;
+$b_inv: #8c5a3d;
+
+:root {
+  --background: #{$background};
+
+  --f_high: #{$f_high};
+  --f_med: #{$f_med};
+  --f_low: #{$f_low};
+  --f_inv: #{$f_inv};
+
+  --b_high: #{$b_high};
+  --b_med: #{$b_med};
+  --b_low: #{$b_low};
+  --b_inv: #{$b_inv};
+}
+
+
+@import 'shorts';
+@import 'fonts';
+@import 'typography';
+@import 'color';
+@import 'nutrition';
+@import 'layout';
+@import 'gallery';
+
+
+main {
+  padding-inline: 2em;
+  padding-top: 0.5em;
+  box-sizing: border-box;
+  padding-bottom: 5em;
+  word-wrap: break-word;
+  word-break: break-word;
+  ul, li {
+    list-style: square;
+  }
+}
+
+footer {
+  border: 1px solid var(--f_high);
+}

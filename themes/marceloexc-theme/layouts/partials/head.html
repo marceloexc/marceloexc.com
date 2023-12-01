@@ -1,9 +1,13 @@
 <head>
 <title>My Dune, My Arrakis</title>
-<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" /> 
+{{ $sass := resources.Get "sass/style.scss" }}
+{{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+<!-- <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />  -->
 <link rel="stylesheet" type="text/css" href="/css/theme.css" />
 <link rel="icon" type="image/x-icon" href="/media/favicon.gif">
 <script type="text/javascript" src="/js/theme.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="UTF-8">
 </head>

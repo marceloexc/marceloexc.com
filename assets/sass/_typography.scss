@@ -1,0 +1,86 @@
+$font-size-h1: 72px;
+$font-size-h2: 32px;
+$font-size-h3: 20px;
+$font-size-p: 16px;
+$font-size-figcaption: 12px;
+
+
+
+main h1 {
+	Font: $font-size-h1 "Menlo";
+	line-height:0.9;
+	margin-block: 0.5em;
+}
+
+h2, legend{
+	font:$font-size-h2 "Menlo";
+}
+
+.tabs a {
+	// font: 19px "FT88 Gothique";
+	font: 19px "Emotion Engine";
+}
+
+h3, th{
+	font: $font-size-h3 "Lack-Regular";
+}
+
+p, ul, li, details, td{
+	font:$font-size-p "AUTHENTIC Sans";
+	line-height: 1.6;
+}
+
+figcaption {
+	font: $font-size-figcaption "AUTHENTIC Sans";
+	padding-block: 2px;
+	color: var(--f_high);
+}
+main a,
+aside a {
+	color:var(--f_low);
+}
+
+fieldset {
+	border: 1px solid var(--f_high);
+}
+
+
+h1, h2, h3, p, a,		ul, li, svg, legend, details, td, th{
+	color:var(--f_high);
+}
+
+td, th {
+	padding: 0.5em;
+}
+
+
+main a:not([href^=http]):not(.no-external-icon):not(.gallery)::after,
+aside a:not([href^="{{ (urls.Parse .Page.Permalink).Scheme }}://{{ (urls.Parse .Page.Permalink).Host }}"]):not(.no-external-icon)::after
+{
+  content: '→';
+}
+
+a[href^=http]:not(.gallery):not(.no-external-icon)::after { 
+	content:'↗';
+ }
+
+main, aside {
+   a, 
+   li a {
+	 font-family: "Lack-Regular";
+	 color: var(--f_med);
+   }
+ }
+
+aside {
+	h3 {
+		font-size: 99%;
+	}
+	h2 {
+		font-size: 180%;
+		}
+	li {
+		margin: 0;
+		list-style: inside;
+	}
+}

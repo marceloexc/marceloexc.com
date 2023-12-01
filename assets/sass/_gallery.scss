@@ -1,0 +1,22 @@
+.gallery-box {
+	  display: flex;
+	  flex-wrap: wrap;
+	  gap:5px;
+}
+
+figure {
+	margin: 2px;
+}
+
+.gallery img {
+	cursor: zoom-in;
+	width: auto;
+}
+
+img {
+	width: 100%;
+	vertical-align: middle;
+	border: 1px solid black;
+	max-width: 600px;
+}
+

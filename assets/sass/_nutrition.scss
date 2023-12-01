@@ -1,0 +1,87 @@
+.nutrition-box {
+  width: 252px;
+  margin: 20px auto 20px auto ;
+  border: 1px solid var(--f_high);
+  padding: 0 7px;
+  background-image: url('/media/paper-texture.webp');
+  background-size: cover;
+  font-size: 16px;
+  position: relative;
+}
+
+.nutrition-box * {
+  box-sizing: border-box;
+}
+
+.divider {
+  border-bottom: 1px solid var(--f_high);
+  margin: 2px 0;
+  clear: right;
+}
+
+
+.float {
+  max-width: 25%;
+  padding-right: 1em;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.lg {
+  height: 10px;
+}
+
+.md {
+  height: 5px;
+}
+
+.lg, .md {
+  background-color: var(--f_high);
+  border: 0;
+}
+
+.nutrition-box p {
+  font-size: 90%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.nutrition-box h1 {
+  margin: 1px 0;
+  letter-spacing: 0.15px;
+    font-family: 'Open Sans', sans-serif;
+  font-size: 220%;
+}
+
+.calories-info {
+  margin: -4px -2px;
+  overflow: hidden;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.no-margin {
+  margin: -5px -2px;
+}
+
+.nutrition-box p:not(.no-divider){
+  border-bottom: 1px solid var(--f_high);
+}
+
+.nutrition-box .indent {
+  margin-left: 1em;
+}
