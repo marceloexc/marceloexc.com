@@ -1,4 +1,4 @@
-baseURL = 'marceloexc.com'
+baseURL = 'https://marceloexc.com'
 languageCode = 'en-us'
 title = 'marceloexc.com'
 theme = "marceloexc-theme"
