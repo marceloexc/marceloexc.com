@@ -26,7 +26,7 @@
 			{{ range .Site.Menus.main }}
 			<li>
 				<a href="{{ .URL }}" aria-label="{{ .Name }}">
-					{{ if $currentPage.IsMenuCurrent .Menu . }}<span>[</span>{{ end }}{{ .Name }}{{ if $currentPage.IsMenuCurrent .Menu . }}<span>]</span>{{ end }}
+					{{ if $currentPage.IsMenuCurrent .Menu . }}<span class="active"><b>[</b></span>{{ end }}{{ .Name }}{{ if $currentPage.IsMenuCurrent .Menu . }}<span class="active"><b>]</b></span>{{ end }}
 				</a>
 			</li>
 		{{ end }}

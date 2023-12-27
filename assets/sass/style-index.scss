@@ -30,19 +30,18 @@ $b_inv: #8c5a3d;
 @import 'typography';
 @import 'color';
 @import 'nutrition';
-@import 'layout';
-@import 'gallery';
+@import 'layout_index';
 
 
 main {
-  padding-inline: 1.5em;
+  padding-inline: 2em;
   padding-top: 0.5em;
   box-sizing: border-box;
   padding-bottom: 5em;
   word-wrap: break-word;
   word-break: break-word;
   ul, li {
-    list-style: square;
+	list-style: square;
   }
 }
 

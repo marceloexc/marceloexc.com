@@ -7,13 +7,13 @@ $font-size-figcaption: 12px;
 
 
 main h1 {
-	Font: $font-size-h1 "Menlo";
+	Font: $font-size-h1 "Lack-Regular";
 	line-height:0.9;
 	margin-block: 0.5em;
 }
 
 h2, legend{
-	font:$font-size-h2 "Menlo";
+	font:$font-size-h2 "Lack-Regular";
 }
 
 .tabs a {
@@ -54,7 +54,7 @@ td, th {
 }
 
 
-main a:not([href^=http]):not(.no-external-icon):not(.gallery)::after,
+main a:not([href^=http]):not(.no-external-icon):not(.gallery):not(.clickbox)::after,
 aside a:not([href^="{{ (urls.Parse .Page.Permalink).Scheme }}://{{ (urls.Parse .Page.Permalink).Host }}"]):not(.no-external-icon)::after
 {
   content: '→';

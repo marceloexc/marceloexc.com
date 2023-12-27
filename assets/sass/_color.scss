@@ -10,10 +10,9 @@ main {
 }
 footer {
 	background-color:var(--b_med);
-}
-
-footer h1 {
-	color: var(--f_med);
+	h1,p,h2,h3,h4,a {
+		color: var(--f_low);
+	}
 }
 
 select {
@@ -30,9 +29,9 @@ select {
 	color: var(--f_high);
 }
 
-a:hover:not(.no-hover) {
-	background-color:var(--b_inv);
-	color:var(--b_med);
+a:hover:not(.no-hover):not(.clickbox) {
+	background-color:var(--b_med);
+	color:var(--b_inv);
 	cursor: alias;
 }
 
@@ -46,7 +45,7 @@ hr {
 }
 
 ::selection {
-	background-color: var(--b_high);
+	background-color: var(--b_med);
 	color:var(--b_inv);
 }
 
