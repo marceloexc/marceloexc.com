@@ -11,12 +11,9 @@ My hobbies include programming, listening to music, biking, and taking pictures
 
 This website is a digital garden - some stuff may get added, some may get removed. Essentially, the website is ever-changing.
 
-{{< figure src="marceloexc.png" class="left float">}} 
-
 I started working on this website in 2023. I try my best to make this website look unique, while still keeping resources low. The main goal is to make the website feel like a digital playground, to create so much content  IDK, there are still some challenges in making a website, read here
 
 "MarceloEXC" stands for **Marcelo** **Exc**ruciated
-
 
 Want to contact me? My email is:
 ``` 'marceloexc', symbols.at, 'tutanota', symbols.dot, 'de' ```

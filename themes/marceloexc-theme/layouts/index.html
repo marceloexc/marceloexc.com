@@ -8,89 +8,94 @@
 	</nav>
 	<div>
 		<main>
-	<!-- <div style="gap: 1.6rem; margin-top: 30px; max-width: 1200px; margin-inline: auto;"> -->
-		<h1>
-			Marcelo's Homepage
-		</h1>
-		<section class="links">
-		<a class="clickbox clickimg" href="/about">
-			<picture>
-				<img src="/media/Animation.gif" alt="Main header image for the about section"/>
-			</picture>
-			<div class="clickdiv">
-				<h3>
-					About</h3>
-				<p>
-					Everything there is to know about me, this website, you, the earth, this life
-				</p>
-			</div>
-		</a>
-		<a class="clickbox clickimg" href="/gallery">
-			<picture>
-				<img src="/media/test1.JPG" alt="Main header image for the about section"/>
-			</picture>
-			<div class="clickdiv">
-				<h3>
-					Gallery</h3>
-				<p>
-					Pictures taken on various cameras, with various levels of quality
-				</p>
-			</div>
-		</a>
-		<a class="clickbox clickimg" href="/projects">
-			<picture>
-				<img src="/media/projects3.png" alt="Main header image for the about section"/>
-			</picture>
-			<div class="clickdiv">
-				<h3>
-					Projects</h3>
-				<p>
-					Everything unfinished or undreamt of as of yet
-				</p>
-			</div>
-		</a>
-		<a class="clickbox clickimg" href="/blog">
-			<picture>
-				<img src="/media/blog.jpg" alt="Main header image for the about section"/>
-			</picture>
-			<div class="clickdiv">
-				<h3>
-					Blog</h3>
-				<p>
-					nothing here yet...
-				</p>
-			</div>
-		</a>
-		<a class="clickbox clickimg" href="/links">
-			<picture>
-				<img src="/media/links_lowres.jpg" alt="Main header image for the about section"/>
-			</picture>
-			<div class="clickdiv">
-				<h3>
-					Links</h3>
-				<p>
-					from the information super-highway
-				</p>
-			</div>
-		</a>
-		<a class="clickbox clickimg" href="/museum">
-			<picture>
-				<img src="/media/projects1.jpg" alt="Main header image for the about section"/>
-			</picture>
-			<div class="clickdiv">
-				<h3>
-					Museum</h3>
-				<p>
-					All archival stuff, hosted on this website at a previous time
-				</p>
-			</div>
-		</a>
-		</section>
-		<p>
-		  {{ range .Site.Taxonomies.tags.ByCount }}
-				 #<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
-		  {{ end }}
-		</p>
+			<h1>
+				Marcelo's Homepage
+			</h1>
+			<p>
+				Website still under massive construction, lo these many years
+			</p>
+			<section class="links">
+			<a class="clickbox clickimg" href="/about">
+				<picture>
+					<source srcset="/media/Animation_full.gif" media="(max-width:716px)">
+					<img src="/media/Animation.gif" alt="Main header image for the about section"/>
+				</picture>
+				<div class="clickdiv">
+					<h3>
+						About</h3>
+					<p>
+						Everything there is to know about me, this website, you, the earth, this life
+					</p>
+				</div>
+			</a>
+			<a class="clickbox clickimg" href="/gallery">
+				<picture>
+					<source srcset="/media/Galleries_full.jpg" media="(max-width:716px)">
+					<img src="/media/test1.JPG" alt="Main header image for the about section"/>
+				</picture>
+				<div class="clickdiv">
+					<h3>
+						Gallery</h3>
+					<p>
+						Pictures taken on various cameras, with various levels of quality
+					</p>
+				</div>
+			</a>
+			<a class="clickbox clickimg" href="/projects">
+				<picture>
+					<source srcset="/media/projects_full.png" media="(max-width:716px)">
+					<img src="/media/projects3.png" alt="Main header image for the about section"/>
+				</picture>
+				<div class="clickdiv">
+					<h3>
+						Projects</h3>
+					<p>
+						Everything unfinished or undreamt of as of yet
+					</p>
+				</div>
+			</a>
+			<a class="clickbox clickimg" href="/blog">
+				<picture>
+					<img src="/media/blog.jpg" alt="Main header image for the about section"/>
+				</picture>
+				<div class="clickdiv">
+					<h3>
+						Blog</h3>
+					<p>
+						nothing here yet...
+					</p>
+				</div>
+			</a>
+			<a class="clickbox clickimg" href="/links">
+				<picture>
+					<img src="/media/links_lowres.jpg" alt="Main header image for the about section"/>
+				</picture>
+				<div class="clickdiv">
+					<h3>
+						Links</h3>
+					<p>
+						from the information super-highway
+					</p>
+				</div>
+			</a>
+			<a class="clickbox clickimg" href="/museum">
+				<picture>
+					<img src="/media/projects1.jpg" alt="Main header image for the about section"/>
+				</picture>
+				<div class="clickdiv">
+					<h3>
+						Museum</h3>
+					<p>
+						All archival stuff, hosted on this website at a previous time
+					</p>
+				</div>
+			</a>
+			</section>
+			<p>
+		  	{{ range .Site.Taxonomies.tags.ByCount }}
+				 	#<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
+		  	{{ end }}
+			</p>
 		<main>
 	</div>
 	{{ partial "themepicker.html"}} 

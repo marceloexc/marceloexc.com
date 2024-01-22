@@ -4,11 +4,13 @@ title = 'marceloexc.com'
 theme = "marceloexc-theme"
 contentDir = "content/"
 
-
 enableGitInfo = true
 
 [markup.goldmark.renderer]
 unsafe= true
+
+[blackfriday]
+ smartypants = false
 
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]

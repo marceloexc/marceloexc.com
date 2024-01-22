@@ -4,11 +4,9 @@ draft: false
 date: 2023-08-24
 tags: ['about']
 ---
-How does the theme system work??? Fuck if i know???? Test test test1234
+This website has many themes available, with `salmon` being the default  theme ([it's one of my favorites]({{< relref "/projects/theme_ports">}})), however I try to bring a variety of both light and dark themes
 
-
-My super awesome super cool swag yolo website has many themes. If you're on a big screen then they should be on the left side of the screen and if you're on a phone or something they should be at the bottom. 
-
-The themes are implemented through just being SVG files, which is [the Hundred Rabbits theme system](https://github.com/hundredrabbits/Themes).
+Instead of the theme data being in a typical format like `json`, they are actually `svg` files which bring the benefit of  *being able to see what the theme is* before applying them to the site. This is called [the Hundred Rabbits theme system](https://github.com/hundredrabbits/Themes).
+%%  TODO - figsrc shortcode   %%
 
 This website is using the Hundred Rabbits theme system, [available here](https://github.com/hundredrabbits/Themes). This is the only portion of the website that uses JavaScript.

@@ -34,10 +34,9 @@ $b_inv: #8c5a3d;
 
 
 main {
-  padding-inline: 2em;
-  padding-top: 0.5em;
+  padding-inline: calc(min(5%, 26px);
+  padding-block: 6px;
   box-sizing: border-box;
-  padding-bottom: 5em;
   word-wrap: break-word;
   word-break: break-word;
   ul, li {

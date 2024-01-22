@@ -179,7 +179,6 @@ body {
 		img {
 			float: left;
 			margin: 0 16px 8px 0;
-			height: 169px;
 			object-fit: contain;
 			border: none;
 		}
@@ -193,6 +192,7 @@ body {
 		}
 	}
 	.clickdiv {
+		display: block;
 		padding: 12px 15px;
 	}
 	&:hover {
@@ -201,7 +201,7 @@ body {
 	&:active {
 		scale: .99;
 	}
-	margin: 20px;
+	margin-block: 12px;
 	width: 100%;
 	max-width: 900px;
 }
@@ -221,4 +221,12 @@ main {
 .aside-box {
 	justify-content: left;
 	padding-left: 64px;
+}
+
+picture {
+	img {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+	}
 }
