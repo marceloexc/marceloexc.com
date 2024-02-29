@@ -14,7 +14,98 @@
 			<p>
 				Website still under massive construction, lo these many years
 			</p>
-			<section class="links">
+			
+			<div class = "flex wrap link-box ">
+				<a class="list-link no-external-icon" href="/about">
+					<div class="list-link-image">
+						<img src="/media/Animation.gif"/>
+					</div>
+					<div class="list-link-text">
+						<h2>
+							About
+						</h2>
+						<p>
+							Everything there is to know
+						</p>
+					</div>
+				</a>
+				
+				<a class="list-link no-external-icon" href="/gallery">
+					<div class="list-link-image">
+						<img src="/media/Galleries_full.jpg"/>
+					</div>
+					<div class="list-link-text">
+						<h2>
+							Gallery
+						</h2>
+						<p>
+							The pictures taken on various cameras
+						</p>
+					</div>
+				</a>
+				
+				<a class="list-link no-external-icon" href="/projects">
+					<div class="list-link-image">
+						<img src="/media/projects_full.png"/>
+					</div>
+					<div class="list-link-text">
+						<h2>
+							Projects
+						</h2>
+						<p>
+							The pictures taken on various cameras
+						</p>
+					</div>
+				</a>
+				
+				<a class="list-link no-external-icon" href="/blog">
+					<div class="list-link-image">
+						<img src="/media/blog.jpg"/>
+					</div>
+					<div class="list-link-text">
+						<h2>
+							Journal
+						</h2>
+						<p>
+							{Incoherent Rambling}
+						</p>
+					</div>
+				</a>
+				<a class="list-link no-external-icon" href="/links">
+					<div class="list-link-image">
+						<img src="/media/links_lowres.jpg"/>
+					</div>
+					<div class="list-link-text">
+						<h2>
+							Links
+						</h2>
+						<p>
+							{Incoherent Rambling}
+						</p>
+					</div>
+				</a>
+				
+				<!-- <a class="clickbox clickimg" href="/gallery">
+					<picture>
+						<source srcset="/media/Galleries_full.jpg" media="(max-width:716px)">
+						<img src="/media/test1.JPG" alt="Main header image for the about section"/>
+					</picture>
+					<div class="clickdiv">
+						<h3>
+							Gallery</h3>
+						<p>
+							Pictures taken on various cameras, with various levels of quality
+						</p>
+					</div>
+				</a> -->
+			</div>
+			
+			
+			
+			
+			
+			
+			<!-- <section class="links">
 			<a class="clickbox clickimg" href="/about">
 				<picture>
 					<source srcset="/media/Animation_full.gif" media="(max-width:716px)">
@@ -90,7 +181,7 @@
 					</p>
 				</div>
 			</a>
-			</section>
+			</section> -->
 			<p>
 		  	{{ range .Site.Taxonomies.tags.ByCount }}
 				 	#<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
