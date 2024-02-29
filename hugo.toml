@@ -18,6 +18,7 @@ lastmod = ["lastmod", ":git", "date", "publishDate"]
 
 [menu]
 [[menu.main]]
+  name = 'About'
   pageRef = '/about'
   weight = 20
 [[menu.main]]
