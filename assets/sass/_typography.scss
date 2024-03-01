@@ -55,6 +55,18 @@ main {
 				max-width: 45px;
 	  	}
 	}
+	
+	pre {
+	overflow-x:auto;/* Enable horizontal scrollbar */
+	margin: 10px;
+	padding: 0.5em;
+	background: var(--b_med);
+	color: var(--f_high);
+	font: 13px "Victor Mono SemiBold";
+	border: 1px solid var(--f_high);
+	max-width:calc(100vw - 90px);
+	}
+	
 }
 
 p, ul, li, details, td{
