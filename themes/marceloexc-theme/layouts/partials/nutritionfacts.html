@@ -1,8 +1,8 @@
-	{{ $date := .Date.Format "2006 -01 - 02" }}
+{{ $date := .Date.Format "2006 -01 - 02" }}
 {{ $lastmod := .Lastmod.Format "2006 - 01 - 02" }}
 
 <div class="nutrition-box">
-<h1 class="bold">
+<h1 class="bold" style="display: flex; justify-content: center; align-items: center;">
 	Nutrition Facts
 </h1>
 <div class="divider"></div>
@@ -15,7 +15,7 @@
 		<b>
 			Serving Size
 			<span class="right">
-				the DAMN website
+				one HTTPS request
 			</span>
 		</b>
 	</p>
@@ -64,7 +64,7 @@
 		</span>
 	</p>
 	
-	<div class="divider md"></div>
+	<!-- <div class="divider md"></div>
 	
 	<p class="right no-divider">
 		<b>
@@ -84,6 +84,17 @@
 	
 	<p class="no-divider">
 		* Page size indicator does not use cached content
-	</p>
+	</p> -->
 	
+	</div>
+	<div class="tags">
+		<p class="bold">
+			INGREDIENTS:
+
+		{{ range .Params.tags -}}
+			<a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ . }}</a>
+			{{ else }}
+			<i>no tags available</i>
+		{{- end -}}
+		</p>
 	</div>

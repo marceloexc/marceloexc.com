@@ -1,6 +1,6 @@
 .nutrition-box {
   width: 252px;
-  margin: 20px auto 20px auto ;
+  margin: 20px auto 5px auto ;
   border: 1px solid var(--f_high);
   padding: 0 7px;
   background-image: url('/media/paper-texture.webp');
@@ -59,10 +59,10 @@
 
 
 .nutrition-box h1 {
-  margin: 1px 0;
-  letter-spacing: 0.15px;
-    font-family: 'Open Sans', sans-serif;
-  font-size: 220%;
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  font-size: 180%;
+  font-stretch: ultra-condensed;
   .title {
   text-align: center;
   }
@@ -87,4 +87,23 @@
 
 .nutrition-box .indent {
   margin-left: 1em;
+}
+
+.tags{
+  width: 252px;
+  margin: 0px 15px 20px 15px ;
+  padding: 0;
+  background-size: cover;
+  font-size: 16px;
+  position: relative;
+  p{
+    font-size: 90%;
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    font-weight: 700%;
+  }
+  a {
+    margin: 0;
+    font-family: "Lack-Regular", sans-serif;
+  }
 }
