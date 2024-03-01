@@ -1,11 +1,13 @@
-<html>
-{{ partial "head-homepage.html"}}
-<body>
-	<nav>
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}"> 
+	{{- partial "head.html" . -}}
+	<body>
+		{{- partial "header.html" . -}}
+	<!-- <nav>
 		<div class="navbar">
 		{{ partial "marceloexc-logo.html"}}
 		</div>
-	</nav>
+	</nav> -->
 	<div>
 		<main>
 			<h1>
@@ -13,6 +15,12 @@
 			</h1>
 			<p>
 				Website still under massive construction, lo these many years
+			</p>
+			
+			<p>
+			  {{ range .Site.Taxonomies.tags.ByCount }}
+					 #<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
+			  {{ end }}
 			</p>
 			
 			<ul class = "flex wrap link-box ">
@@ -51,7 +59,7 @@
 				<a class="list-link no-external-icon" href="/projects">
 					<li style="list-style: none;">
 						<div class="list-link-image">
-							<img src="/media/projects3.png"/>
+							<img src="/media/projects.gif"/>
 						</div>
 						<div class="list-link-text">
 							<h2>
@@ -67,7 +75,7 @@
 				<a class="list-link no-external-icon" href="/blog">
 					<li style="list-style: none;">
 						<div class="list-link-image">
-							<img src="/media/projects3.png"/>
+							<img src="/media/journal.webp"/>
 						</div>
 						<div class="list-link-text">
 							<h2>
@@ -79,25 +87,42 @@
 						</div>
 					</li>
 				</a>
+				
+				<a class="list-link no-external-icon" href="/links">
+					<li style="list-style: none;">
+						<div class="list-link-image">
+							<img src="/media/links.webp"/>
+						</div>
+						<div class="list-link-text">
+							<h2>
+								Links
+							</h2>
+							<p>
+								From the archives
+							</p>
+						</div>
+					</li>
+				</a>
+				
+				<a class="list-link no-external-icon" href="/museum">
+					<li style="list-style: none;">
+						<div class="list-link-image">
+							<img src="/media/museum.webp"/>
+						</div>
+						<div class="list-link-text">
+							<h2>
+								Museum
+							</h2>
+							<p>
+								Enter if you dare
+							</p>
+						</div>
+					</li>
+				</a>
 			</ul>
 			
 			<!-- <section class="links">
 			
-			</a>
-			
-			<a class="clickbox clickimg" href="/projects">
-				<picture>
-					<source srcset="/media/projects_full.png" media="(max-width:716px)">
-					<img src="/media/projects3.png" alt="Main header image for the about section"/>
-				</picture>
-				<div class="clickdiv">
-					<h3>
-						Projects</h3>
-					<p>
-						Everything unfinished or undreamt of as of yet
-					</p>
-				</div>
-			</a>
 			<a class="clickbox clickimg" href="/blog">
 				<picture>
 					<img src="/media/blog.jpg" alt="Main header image for the about section"/>
@@ -135,16 +160,8 @@
 				</div>
 			</a>
 			</section> -->
-			<p>
-		  	{{ range .Site.Taxonomies.tags.ByCount }}
-				 	#<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
-		  	{{ end }}
-			</p>
-		<main>
 	</div>
-	{{ partial "themepicker.html"}} 
 </body>
-{{ partial "header-dup.html"}}
-{{ partial "home.html"}}
-{{ partial "footer.html"}}
+{{- partial "aside.html" . -}}
+{{- partial "footer.html" . -}}
 </html>
