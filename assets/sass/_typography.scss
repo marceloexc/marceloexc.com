@@ -25,6 +25,38 @@ h3, th{
 	font: $font-size-h3 "Lack-Regular";
 }
 
+// headings styling
+main {
+	
+	
+	.no-external-icon{
+		text-decoration: none;
+		color:inherit;
+	}
+	
+	// headings styling
+	h3 {
+		color: var(--f_inv);
+		background-color: var(--f_med);
+		padding-inline: 0.8rem;
+		padding-block: 0px;
+		display: inline-block;
+		position: relative; /* Add this to make the position relative */
+		margin: 0; /* Remove margin to eliminate the gap */
+		margin-right: 2.3em;
+		::after {
+			content: "";
+				position: absolute;
+				bottom: 0; /* Position it at the bottom */
+				left: 100%; /* Position it to the right of the paragraph */
+				width: 50%; /* 1/4 of the width */
+				height: 25%; /* 1/4 of the height */
+				background-color: var(--f_med); /* Color of the rectangle */
+				max-width: 45px;
+	  	}
+	}
+}
+
 p, ul, li, details, td{
 	font:$font-size-p "AUTHENTIC Sans";
 	line-height: 1.6;

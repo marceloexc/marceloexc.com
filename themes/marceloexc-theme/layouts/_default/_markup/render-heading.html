@@ -1,6 +1,4 @@
-<h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }} 
-  <a href="#{{ .Anchor | safeURL }}" class="no-external-icon">
-	🔗
-  </a>
-</h{{ .Level }}>
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+  <a href="#{{ .Anchor | safeURL }}" class="no-external-icon">{{ .Text | safeHTML }} </a>
 
+</h{{ .Level }}>
