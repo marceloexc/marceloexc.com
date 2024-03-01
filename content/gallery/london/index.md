@@ -2,7 +2,8 @@
 title: "London"
 draft: false
 date: 2023-06-02
-tags: ["ricoh-r1","2023"]
+tags: ["ricoh-r1", "film"]
+featured_image: "images/london.webp"
 ---
 Visited for 3 weeks (May15 -> Jun2), this was a trip provided by my school where I was given this super nice room to stay in
 
@@ -11,5 +12,5 @@ Visited for 3 weeks (May15 -> Jun2), this was a trip provided by my school where
 Film pictures taken with [Ricoh R1]({{< relref "/tags/ricoh-r1">}}), and I used either Kodak Gold 200, Kodak Portra 800, or Ilford HP5. I'm too lazy to tag each picture with their film stock but you can just look at them and be able to tell.
 
 
-## Images
+### Images
 {{< gallery >}}

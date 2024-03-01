@@ -1,15 +1,37 @@
-{{ define "main" }}  
-<div class="container">  
-	<h1>{{ .Name }}</h1>  
-			{{ .Content }}  
-			<ul>  
-				{{ range .Pages }}  
-				<li>
-					<a href="{{ .RelPermalink }}">
-						{{ .Title }}
-					</a>
-				</li>
-				{{ end }}  
-			</ul>  
-		</div>  
-{{ end }}  
+
+{{ define "main" }}
+<div class="container">
+	<h1>{{ .Name }}</h1>
+	{{ .Content }}
+	<h3>
+		Further Reading
+	</h3>
+	<ul class="flex wrap link-box">
+		{{ range .Pages }}
+		<a class="list-link no-external-icon" href="{{ .RelPermalink }}">
+			<li style="list-style: none">
+				<div class="list-link-image">
+					{{ if (isset .Params "featured_image") }}
+						{{ with .Params.featured_image }}
+							{{ with resources.Get .}} 
+						<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height}}">
+					    {{ else }}
+						{{ errorf "Unable to locate %s in the directory" . }}
+							{{end}}
+						{{end}}
+					{{else}}
+					{{ $imageIndices := shuffle (seq 1 7) }}
+					{{ $randomIndex := index $imageIndices 0 }}
+					<img src="/media/{{ $randomIndex }}.jpg" alt="Default Image">
+					 {{ end }}
+				</div>
+				<div class="list-link-text">
+					<h2>{{ .Title }}</h2>
+					<p>{{ .Summary  | truncate 50 }} <i></i></p>
+				</div>
+			</li>
+		</a>
+		{{ end }}
+	</ul>
+</div>
+{{ end }}

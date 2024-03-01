@@ -1,21 +1,22 @@
 ---  
-title: "About"  
+title: "About..."  
 draft: false  
 tags: ["about"]
 ---  
-### My name is Marcelo Mendez, welcome to the website
+### ...the website
+_marceloexc.com_ is my online digital playground. I have pictures, code, writings, and other random stuff. I use Hugo as my Static Site Generator, being hosted through Caddy with a [Vultr](https://www.vultr.com/) Debian box.
 
-I'm currently a computer science student enrolled at the University of Texas at Rio Grande Valley
+### ...about me
 
-My hobbies include programming, listening to music, biking, and taking pictures
+My name is Marcelo Mendez. I'm currently a computer science student enrolled at the University of Texas at Rio Grande Valley
 
-This website is a digital garden - some stuff may get added, some may get removed. Essentially, the website is ever-changing.
+My hobbies include programming, listening to music, biking, and taking pictures. I started to work on this website in May 2023, and it is always in a state of (unfinishment?)
 
-I started working on this website in 2023. I try my best to make this website look unique, while still keeping resources low. The main goal is to make the website feel like a digital playground, to create so much content  IDK, there are still some challenges in making a website, read here
-
-"MarceloEXC" stands for **Marcelo** **Exc**ruciated
+Some cool facts:
+* The "EXC" in "MarceloEXC" stands for Excruciated (my Xbox gamertag from 5th grade)
+* I can't pronounce the word "reciepts"
+* my first computer was an iBook G4 in 2012 (i thought i was so cool) 
 
 Want to contact me? My email is:
 ``` 'marceloexc', symbols.at, 'tutanota', symbols.dot, 'de' ```
 
-(I gotta do it like this - or else the spam bots find me!)

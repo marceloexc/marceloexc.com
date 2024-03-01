@@ -3,6 +3,7 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
+        <input type="checkbox" id="toggle-sidebar" aria-label="Toggle Sidebar">
         <main>
             <div style="max-width:1200px;">
         {{- block "main" . }}{{- end }}

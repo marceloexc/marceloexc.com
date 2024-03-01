@@ -1,6 +1,9 @@
 ---
 title: "Software"
-draft: true
+draft: false
+date: 2024-02-02
+featured_image: "images/software_1.jpg"
+
 ---
 
 ## The tools I use on a daily basis

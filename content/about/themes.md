@@ -3,6 +3,7 @@ title: "The Theme System"
 draft: false
 date: 2023-08-24
 tags: ['about']
+featured_image: "images/salmon.png"
 ---
 This website has many themes available, with `salmon` being the default  theme ([it's one of my favorites]({{< relref "/projects/theme_ports">}})), however I try to bring a variety of both light and dark themes
 
