@@ -41,9 +41,11 @@ main {
   padding-bottom: 5em;
   word-wrap: break-word;
   word-break: break-word;
-  ul, li {
-    list-style: square;
-  }
+  
+  // TODO: fix this?
+  // ul, li {
+  //   list-style: square;
+  // }
 }
 
 footer {
