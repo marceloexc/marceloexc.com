@@ -1,7 +1,7 @@
 ---
 title: "Morphine"
 date: 2023-08-24
-draft: false
+draft: true 
 tags: ['instagram']
 ---
 ## demerol...demeroooool....
