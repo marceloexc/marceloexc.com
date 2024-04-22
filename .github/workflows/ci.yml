@@ -39,3 +39,21 @@ jobs:
         env:
           DEPLOY_SERVER: ${{ secrets.DEPLOY_SERVER }}
           DEPLOY_USERNAME: ${{ secrets.DEPLOY_USERNAME }}
+          
+      - name: Change URL for CORS on non-SSL mirror Hugo Config
+        run: sudo rm -rf hugo.toml && mv hugo_infinityfree.toml hugo.toml
+        
+      - name: Build the website (again)
+        run: hugo
+        
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+        
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftpupload.net
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: public/
+          server-dir: htdocs/
