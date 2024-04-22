@@ -3,20 +3,45 @@ title: "About..."
 draft: false  
 tags: ["about"]
 ---  
+
+### ...me
+
+My name is Marcelo Mendez, I'm based in McAllen, Texas. I'm currently in university for CS.
+
+Dreams I have:
+
+* A phone that lasts twenty years
+
+* High speed rail in Texas
+
+* A small computer that lives in the attic of each home, providing self-hosted and self-sufficient services
+
+* New Radiohead or Brave Little Abacus album (take your pick)
+
+Email contact is at
+```
+'marceloexc', symbols.at, 'tutanota', symbols.dot, 'de'
+```
+
+### ...what I do
+
+* Programming
+
+	*  I'm fluent in Python but also interested in Go, Rust, C, Common Lisp, and UXN.
+	
+	* I like to believe that the software I make can be useful to someone stopping by.
+	
+* Photography
+
+	* I take both digital and film photos. I publish most of them online, either through this website or through my instagram
+	
+* Biking
+
+* Writing
+
+* Making (but mostly listening to) music
+
+
 ### ...the website
-_marceloexc.com_ is my online digital playground. I have pictures, code, writings, and other random stuff. I use Hugo as my Static Site Generator, being hosted through Caddy with a [Vultr](https://www.vultr.com/) Debian box.
-
-### ...about me
-
-My name is Marcelo Mendez. I'm currently a computer science student enrolled at the University of Texas at Rio Grande Valley
-
-My hobbies include programming, listening to music, biking, and taking pictures. I started to work on this website in May 2023, and it is always in a state of (unfinishment?)
-
-Some cool facts:
-* The "EXC" in "MarceloEXC" stands for Excruciated (my Xbox gamertag from 5th grade)
-* I can't pronounce the word "reciepts"
-* my first computer was an iBook G4 in 2012 (i thought i was so cool) 
-
-Want to contact me? My email is:
-``` 'marceloexc', symbols.at, 'tutanota', symbols.dot, 'de' ```
+I'm not very good at making websites, but I do know what I [like](https://potato.cheap/) and what I [don't like](https://infrequently.org/2024/01/performance-inequality-gap-2024/). The only JavaScript that is used is to handle themes (which are not detrimental to the site's function). A non-SSL mirror can be found at <https://marceloexc.rf.gd>
 
