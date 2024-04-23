@@ -1,6 +1,6 @@
 ---
 title: "AudioShear"
-draft: false
+draft: true
 ---
 
 ### Trimming the fat from my music library

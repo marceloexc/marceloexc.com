@@ -1,6 +1,6 @@
 ---
 title: "Converting my .mp3 collection to AAC"
-draft: true
+draft: false
 date: 2024-04-10T22:09:05-05:00
 blog: false
 tags: ["website"]
