@@ -27,7 +27,11 @@
 				</div>
 				<div class="list-link-text">
 					<h2>{{ .Title }}</h2>
+					{{ if .Params.description }}
+					<p>{{ .Params.description }} </p>
+					{{ else }}
 					<p>{{ .Summary  | truncate 50 }} <i></i></p>
+					{{ end }}
 				</div>
 			</li>
 		</a>
