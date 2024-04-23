@@ -1,0 +1,13 @@
+<!-- layouts/partials/tags.html -->
+<div class="tagbox">
+  <p>
+	{{ $currentPage := . }}
+	{{ range .Site.Taxonomies.tags.ByCount }}
+	  {{ if in .Pages $currentPage }}
+		<b><a href="{{ .Page.Permalink }}" style="color: var(--f_med);">#{{ lower .Page.Title }}</a></b>
+	  {{ else }}
+		<a href="{{ .Page.Permalink }}" style="color: var(--f_high);">#{{ lower .Page.Title }}</a>
+	  {{ end }}
+	{{ end }}
+  </p>
+</div>

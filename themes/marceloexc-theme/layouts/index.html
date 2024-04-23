@@ -3,11 +3,6 @@
 	{{- partial "head.html" . -}}
 	<body>
 		{{- partial "header.html" . -}}
-	<!-- <nav>
-		<div class="navbar">
-		{{ partial "marceloexc-logo.html"}}
-		</div>
-	</nav> -->
 	<div>
 		<main>
 			<h1>
@@ -17,11 +12,6 @@
 				Website still under massive construction, lo these many years
 			</p>
 			
-			<p>
-			  {{ range .Site.Taxonomies.tags.ByCount }}
-					 #<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
-			  {{ end }}
-			</p>
 			
 			<ul class = "flex wrap link-box ">
 				<a class="list-link no-external-icon" href="/about">
@@ -72,7 +62,7 @@
 					</li>
 				</a>
 				
-				<a class="list-link no-external-icon" href="/blog">
+				<a class="list-link no-external-icon" href="/journal">
 					<li style="list-style: none;">
 						<div class="list-link-image">
 							<img src="/media/journal.webp"/>

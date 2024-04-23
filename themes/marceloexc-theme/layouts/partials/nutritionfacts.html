@@ -87,14 +87,3 @@
 	</p> -->
 	
 	</div>
-	<div class="tags">
-		<p class="bold">
-			INGREDIENTS:
-
-		{{ range .Params.tags -}}
-			<a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ . }}</a>
-			{{ else }}
-			<i>no tags available</i>
-		{{- end -}}
-		</p>
-	</div>
