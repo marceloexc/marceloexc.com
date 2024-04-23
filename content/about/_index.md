@@ -12,7 +12,7 @@ Dreams I have:
 
 * A phone that lasts twenty years
 
-* High speed rail in Texas
+* A robot with a CD Player as a heart
 
 * A small computer that lives in the attic of each home, providing self-hosted and self-sufficient services
 
