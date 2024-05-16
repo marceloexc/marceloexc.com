@@ -2,20 +2,18 @@
 title: "Hardware"
 draft: false
 date: 2024-02-02
+blog: false
+tags: ["computer"]
 featured_image: "images/hardware.jpg"
+description: "Hardcore"
+toc: false
 ---
-  
-## The things you can kick
+
+## Hardware
 
 ### La Mamalona
-My main computer is a *2019 MacBook Pro 15'* with the stock specs. Even when Apple Silicon has taken over the mac scene, I still have yet to find a reason to upgrade to anything else
 
-Many people shit on this era of MacBooks because of the touchbar and the butterfly keyboard. I use [HapticKey](https://github.com/niw/HapticKey) which is a daemon that sends a click feedback to the trackpad everytime I touch the touchbar (if you didnt know, the force touch trackpad is actually a flat surface with a [vibration motor](https://www.theverge.com/2015/3/13/8210599/macbook-pro-new-force-touch-trackpad-hands-on-video)), and simulates an actual press on an actual keyboard instead of just touching a piece of glass.
-
-As for the butterfly keyboard, Ive actually come to really like it. I dont get any sort of pain because of the low key travel, and its the last revision version which means that the problem of [sticky keys](https://www.theverge.com/2020/5/4/21246223/macbook-keyboard-butterfly-magic-pro-apple-design) that stop working after a while
-
-I will say that battery life is atrocious, and im jealous of the standby times of Apple Silicon macs. Right now, CoconutBattery is reporting that only _74%_ of my macs battery is usable*_!!__* I make do by this Anker powerbank that can output 40W unplugged, which is not always enough to power it while running. However, its enough to stow it in the laptop sleeve with it charging while I walk inbetween classes. Later, i might take it into a repair shop to replace the battery
-
+Main computer is a 2019 MacBook Pro 15inch with stock specs
 
 ```
                     'c.          marceloexc@yggdrasil.local
@@ -38,8 +36,8 @@ I will say that battery life is atrocious, and im jealous of the standby times o
 ```
 
 ### The Server
-I use a 2012 Mac Mini as my main home server. It's pretty capable for what I use it for, and I like the idea of the computer that runs inside your home 24/7 to be a little eepy computer instead of the ultra power-sucking rigs that I see as a homelab. 
-  
+
+Using a 2012 Mac Mini as a home server...whole thing was like 43 bucks
   
 ```
        _,met$$$$$gg.          macmini@macmini
@@ -60,10 +58,9 @@ I use a 2012 Mac Mini as my main home server. It's pretty capable for what I use
           `"Y$b._
               `"""
 ```
-### Hardware
-  
-### Computers
-* TODO: insert rel link to software.md about the software that i use on this machine
-* iBook G4
-* Microsoft Precision Mouse
+
+### TODO
+
+* More computers
+  * gateway, rpi
 
