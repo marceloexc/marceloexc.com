@@ -1,6 +1,6 @@
 ---
 title: Artists
-draft: false
+draft: true 
 date: 2023-09-09
 ---
 I think a pretty good motivator for learning how to draw is to analyze how artists paint a pretty picture. Thus, I give you:
