@@ -30,17 +30,14 @@ lastmod = ["lastmod", ":git", "date", "publishDate"]
   pageRef = '/projects'
   weight = 35
 [[menu.main]]
-	name = 'Music'
-	pageRef = '/music'
+	name = 'Journal'
+	pageRef = '/journal'
 	weight = 40
   [[menu.main]]
 	name = 'Links'
 	pageRef = '/links'
 	weight = 50
-  [[menu.main]]
-  name = 'Museum'
-  weight = 60
-  
+
 
 
 
