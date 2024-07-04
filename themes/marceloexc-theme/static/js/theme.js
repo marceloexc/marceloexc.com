@@ -14,11 +14,11 @@ function Theme(client) {
 
   // update when changing theme
   this.default = {
-	  background: "#D7C6B8",
+	  background: "#e0cdbc",
 	  f_high: "#1E1D1D",
-	  f_med: "#25296B",
+	  f_med: "#485e9b",
 	  f_low: "#523d2c",
-	  f_inv: "#3f4f5b",
+	  f_inv: "#ffffff",
 	  b_high: "#E7D8C8",
 	  b_med: "#CEC7C0",
 	  b_low: "#E9E2D8",
