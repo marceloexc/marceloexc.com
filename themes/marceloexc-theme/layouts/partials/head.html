@@ -1,7 +1,7 @@
 <head>
 <title>My Dune, My Arrakis</title>
 {{ $sass := resources.Get "sass/style.scss" }}
-{{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
+{{ $style := $sass | css.Sass | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 <!-- <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />  -->
 <link rel="stylesheet" type="text/css" href="/css/theme.css" />

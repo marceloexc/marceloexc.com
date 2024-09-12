@@ -28,9 +28,9 @@
 				<div class="list-link-text">
 					<h2>{{ .Title }}</h2>
 					{{ if .Params.description }}
-					<p>{{ .Params.description }} </p>
+						<div>{{ .Params.description | safeHTML }}</div>
 					{{ else }}
-					<p>{{ .Summary  | truncate 50 }} <i></i></p>
+						<div>{{ .Summary | plainify | truncate 50 }} <i></i></div>
 					{{ end }}
 				</div>
 			</li>

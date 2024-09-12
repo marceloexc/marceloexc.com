@@ -7,10 +7,10 @@ contentDir = "content/"
 enableGitInfo = true
 
 [markup.goldmark.renderer]
-unsafe= true
+unsafe= false
 
 [blackfriday]
- smartypants = false
+ smartypants = true
 
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]
