@@ -22,18 +22,18 @@ lastmod = ["lastmod", ":git", "date", "publishDate"]
   pageRef = '/about'
   weight = 20
 [[menu.main]]
-  name = 'Gallery'
-  pageRef = '/gallery'
-  weight = 30
-[[menu.main]]
   name = 'Projects'
   pageRef = '/projects'
+  weight = 30
+[[menu.main]]
+  name = 'Colophon'
+  pageRef = '/colophon'
   weight = 35
 [[menu.main]]
 	name = 'Journal'
 	pageRef = '/journal'
 	weight = 40
-  [[menu.main]]
+[[menu.main]]
 	name = 'Links'
 	pageRef = '/links'
 	weight = 50
